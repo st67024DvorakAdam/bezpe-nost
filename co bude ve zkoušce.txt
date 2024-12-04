@@ -1,0 +1,15 @@
+kodovni vs sifrovani, 
+detekcni vs samoopravny kod,
+základní šifry - caesarova atd - umět vytvořit a říct z paměti
+relace a zobrazení - co to je groupa nebo těleso - množina k tomu jedna nebo dvě operace - sčítání nebo násobení
+des šifra - základní šifrovací schéma - základní krůčky buď permutační (z trojky udělám osmičku atd.) nebo substituční (prohazování slov mezi sebou)
+asymetrické šifry - asi nechce
+veřejně privátnbí klíč - co to je
+kdo byl fiestler - fiestlerova funkce - němec to byl
+enigma - co to je + základní představa jak to mohlo fungovat - byl to kufr - a že tam bylo nějaký zrcadlo a rotory
+vymyšlete transpozoční šifru, šifrovací tabulju - zvolí se bod, tak u protilehlých se nesmí vystřihovat puntík a musí to mít sudej počet řádků i sloupců, při každém otočení se mapují písmenka do jiné oblasti
+morseovka - kod, který vyšlu za nejkratší možnou dobu a nejkratší kod- optimální kod
+morseovka - je to kod a ne šifra
+hemingova vzdálenost - o kolik bitů se liší nejbližší znaky v abecedě
+veřejný a neveřejný klíč - asymetrická šifra a i schéma, třeba použití při tsa - že se vymění asymetricky jen klíč a pak se jede symetricky
+
