@@ -13,3 +13,75 @@ morseovka - je to kod a ne šifra
 hemingova vzdálenost - o kolik bitů se liší nejbližší znaky v abecedě
 veřejný a neveřejný klíč - asymetrická šifra a i schéma, třeba použití při tsa - že se vymění asymetricky jen klíč a pak se jede symetricky
 
+#Odpovědi:
+1) Kódování vs. šifrování
+Kódování: Převod dat do jiného formátu pro přenos nebo ukládání (např. ASCII, Base64). Cílem není utajení.
+Šifrování: Převod dat do nečitelného formátu pomocí klíče, aby tomu nikdo nerozuměl (např. AES, RSA). Cílem je utajení.
+
+2) Detekční vs. samoopravný kód
+Detekční kód: Odhalí chybu (např. kontrolní součet), ale neumí ji opravit.
+Samoopravný kód: Odhalí chybu a umí ji i opravit (např. Hammingův kód).
+
+3) Základní šifry (např. Caesarova)
+Caesarova šifra: Posouvám písmena v abecedě o pevný počet míst (např. A → D, B → E, C → F, když posunu o 3).
+Vytvoření Caesarovy šifry: Každé písmeno zprávy posuň v abecedě o N míst.
+Další šifry:
+Vigenérova šifra: Každé písmeno posuneš jinak podle klíčového slova.
+Transpoziční šifra: Zamícháš pořadí písmen podle pravidla/tabulky.
+
+4) Relace a zobrazení (grupa, těleso)
+Relace: Vztah mezi prvky dvou množin (např. „větší než“ mezi čísly).
+Zobrazení (funkce): Každému prvku z jedné množiny přiřadíš prvek z druhé (např. f(x) = x²).
+Grupa: Množina s operací (např. + nebo ×), kde je uzavřenost, asociativita, inverzní prvek a neutrální prvek.
+Těleso: Množina se dvěma operacemi (např. + a ×), kde obě operace fungují jako grupy a násobení má inverzní prvky (kromě 0).
+
+5) DES šifra (Data Encryption Standard)
+Základní schéma:
+Rozdělení: Rozdělí text na bloky (64 bitů).
+Permutace: Prohodí bity podle tabulky.
+Substituce: Zamění bity podle S-boxů (tabulek).
+Feistelova funkce: Aplikuje operace XOR a prohodí části.
+Opakování: Opakuje 16x.
+Cílem je text totálně "zamíchat" do nečitelného formátu.
+
+6) Asymetrické šifry
+Co to je: Šifrování dvěma klíči – veřejným (pro šifrování) a soukromým (pro dešifrování).
+Příklad: RSA. Když ti někdo pošle zprávu, zašifruje ji tvým veřejným klíčem, ale dešifrovat to můžeš jen ty svým soukromým klíčem.
+
+7) Veřejný a soukromý klíč
+Veřejný klíč: Každý ho zná, slouží k šifrování dat pro tebe.
+Soukromý klíč: Znáš ho jen ty, používá se k dešifrování dat, co ti někdo poslal.
+
+8) Kdo byl Feistel (Feistelova funkce)
+Werner Feistel: Německý kryptograf, vymyslel šifrovací schéma (Feistelova síť), které používá DES.
+Feistelova funkce: Rozdělí data na dvě části, aplikuje šifrovací funkci a XOR. Pak prohodí části.
+
+9) Enigma (co to je, jak funguje)
+Enigma: Šifrovací stroj z 2. sv. války, vypadá jako kufr s klávesnicí a žárovkami.
+Jak to fungovalo:
+Písmeno se poslalo přes rotory (otáčely se při psaní) a zrcadlo (reverzovalo signál).
+Výsledné písmeno bylo zašifrováno jinak při každém stisku.
+Bylo těžké ho prolomit, protože rotory se měnily po každém znaku.
+
+10) Transpoziční šifra (šifrovací tabulka)
+Co to je: Zaměníš pořadí písmen podle pravidla (ne měníš písmena, jen pořadí).
+Šifrovací tabulka: Např. píšeš text do mřížky (např. 4x4) po řádcích a čteš po sloupcích.
+Pravidlo s protilehlými body: Pokud je v tabulce 4x4 písmeno vlevo nahoře, protipól je vpravo dole. Tyto pozice se při šifrování prohodí.
+
+11) Morseovka (kód, ne šifra)
+Co to je: Kód, ne šifra (kód přenáší info, šifra něco tají).
+Jak funguje: Krátké (tečka) a dlouhé (čárka) signály, optimálně zvolené pro rychlý přenos.
+Nejkratší kódy: Častá písmena mají krátké kódy (E = tečka, T = čárka), vzácnější delší.
+
+12) Hemingova vzdálenost
+Co to je: Počet bitů, které se liší mezi dvěma binárními řetězci stejné délky.
+Příklad: 1011 a 1001 se liší ve 2. bitu, takže Hammingova vzdálenost = 1.
+
+13) Veřejný a soukromý klíč (asymetrická šifra + schéma)
+Schéma:
+Každý má veřejný a soukromý klíč.
+Když ti někdo pošle zprávu, zašifruje ji tvým veřejným klíčem.
+Ty ji dešifruješ svým soukromým klíčem.
+Použití v TSA:
+Pro výměnu klíče se použije asymetrická šifra (RSA).
+Pro šifrování se pak jede rychleji symetrickou šifrou (např. AES).
