@@ -44,6 +44,9 @@ Feistelova funkce: Aplikuje operace XOR a prohodí části.
 Opakování: Opakuje 16x.
 Cílem je text totálně "zamíchat" do nečitelného formátu.
 
+Z netu o DES:
+Otevřená data, která jsou určena k zašifrování, jsou nejdříve rozdělena do bloků po 64 bitech, se kterými je následně prováděna řada operací. Jako první dochází k permutaci dat za pomoci připravené tabulky, jedná se o výpočetně náročný krok. Dalším krokem, ke kterému dochází, je přidání kryptografického klíče, který je přidáván bit po bitu a dochází k transformaci dat pomocí funkce XOR. Třetím důležitým procesem je nelineární substituce. To vše se provádí v mnoha opakováních (rounds). [2
+
 6) Asymetrické šifry
 Co to je: Šifrování dvěma klíči – veřejným (pro šifrování) a soukromým (pro dešifrování).
 Příklad: RSA. Když ti někdo pošle zprávu, zašifruje ji tvým veřejným klíčem, ale dešifrovat to můžeš jen ty svým soukromým klíčem.
